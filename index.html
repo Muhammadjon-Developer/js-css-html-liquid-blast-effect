@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liquid blast effects using html, css and javascript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="circle"></div>
+  <svg>
+    <filter id="gooey">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+      <feColorMatrix values="
+      1 0 0 0 0
+      0 1 0 0 0
+      0 0 1 0 0
+      0 0 0 50 -10"
+      ></feColorMatrix>
+    </filter>
+  </svg>
+  
+  <script src="app.js"></script>
+</body>
+</html>
